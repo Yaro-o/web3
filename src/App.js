@@ -415,8 +415,7 @@ function App() {
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
