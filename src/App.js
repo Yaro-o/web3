@@ -59,16 +59,15 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
-  @media (min-width: 767px) {
+  @media (max-width: 200px) {
     flex-direction: row;
   }
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 250px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 250px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -198,27 +197,50 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        style={{ padding: 24, backgroundColor: "var(--primary-text)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        </a>
-        <s.SpacerSmall />
+
+        
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+
+        <s.Container
+            flex={2}
+            jc={"center"}
+            ai={"center"}
+            style={{
+              backgroundColor: "white",
+              padding: 24,
+              borderRadius: 24,
+              border: "4px groove var(--secondary)",
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+            }}
+          >
+          
+          <a href={CONFIG.MARKETPLACE_LINK}>
+          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+          </a>
+          
           </s.Container>
+
+
+
+
+
+
+
+        
+
           <s.SpacerLarge />
           <s.Container
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "white",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              border: "4px groove var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
@@ -249,14 +271,26 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("https://twitter.com/HeisenbergNFTs", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                Roadmap
+                Twitter
               </StyledButton>
+
+              <StyledButton
+                onClick={(e) => {
+                  window.open("https://t.me/+A74GA5WCfTYyODdh", "_blank");
+                }}
+                style={{
+                  margin: "5px",
+                }}
+              >
+                Telegram
+              </StyledButton>
+
               <StyledButton
                 style={{
                   margin: "5px",
@@ -292,13 +326,13 @@ function App() {
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Excluding gas fees
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -398,16 +432,21 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+          
+        <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+            Heisenberg NFTs or $METH tokens are fully-on-chain randomly generated NFTs build on the Polygon Network.
+          </s.TextDescription>
+          <s.SpacerSmall />
+
           <s.TextDescription
             style={{
               textAlign: "center",
@@ -417,16 +456,15 @@ function App() {
             Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address.
           </s.TextDescription>
-          <s.SpacerSmall />
+          
           <s.TextDescription
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
             }}
           >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            Gas limit is set to {CONFIG.GAS_LIMIT} for the contract to
+            successfully mint your NFT. 
           </s.TextDescription>
         </s.Container>
       </s.Container>
