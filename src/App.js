@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import blockchainReducer from "./redux/blockchain/blockchainReducer";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -12,7 +13,7 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: var(--secondary);
+  background-color: var(--secondarybutton);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
@@ -98,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -208,6 +209,7 @@ function App() {
             flex={2}
             jc={"center"}
             ai={"center"}
+            
             style={{
               backgroundColor: "white",
               opacity: 0.8,
@@ -239,8 +241,8 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "white",
-              opacity: 0.8,
               padding: 24,
+              opacity: 0.8,
               borderRadius: 24,
               border: "4px groove var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
@@ -330,7 +332,7 @@ function App() {
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
-                <s.SpacerXSmall />
+                
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -442,9 +444,10 @@ function App() {
         <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--primary-texta)",
             }}
           >
+          
             Heisenberg NFTs or $METH tokens are fully-on-chain randomly generated NFTs build on the Polygon Network.
           </s.TextDescription>
           <s.SpacerSmall />
@@ -452,7 +455,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--primary-texta)",
             }}
           >
             Please make sure you are connected to the right network (
@@ -462,7 +465,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "var(--primary-texta)",
             }}
           >
             Gas limit is set to {CONFIG.GAS_LIMIT} for the contract to
