@@ -210,6 +210,7 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "white",
+              opacity: 0.8,
               padding: 24,
               borderRadius: 24,
               border: "4px groove var(--secondary)",
@@ -238,6 +239,7 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "white",
+              opacity: 0.8,
               padding: 24,
               borderRadius: 24,
               border: "4px groove var(--secondary)",
