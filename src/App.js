@@ -448,7 +448,7 @@ function App() {
             }}
           >
           
-            Heisenberg NFTs or $METH tokens are fully-on-chain randomly generated NFTs build on the Polygon Network.
+            Heisenberg NFTs or $METH tokens are fully-on-chain randomly generated NFTs built on the Polygon Network.
           </s.TextDescription>
           <s.SpacerSmall />
 
