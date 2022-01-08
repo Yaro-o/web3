@@ -1,15 +1,15 @@
 {
-  "CONTRACT_ADDRESS": "0xE9FB8F6e57079672B2dE1635c28157657d9Ccd63",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xe9fb8f6e57079672b2de1635c28157657d9ccd63",
+  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
-    "ID": 80001
+    "ID": 137
   },
   "NFT_NAME": "Heisenberg NFT",
   "SYMBOL": "METH",
   "MAX_SUPPLY": 3000,
-  "WEI_COST": 50000000000000000,
+  "WEI_COST": 5000000000000000000,
   "DISPLAY_COST": 5,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
