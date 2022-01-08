@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x5755Ab845dDEaB27E1cfCe00cd629B2e135Acc3d",
-  "SCAN_LINK": "https://etherscan.io/address/0x5755ab845ddeab27e1cfce00cd629b2e135acc3d",
+  "CONTRACT_ADDRESS": "0xE9FB8F6e57079672B2dE1635c28157657d9Ccd63",
+  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xe9fb8f6e57079672b2de1635c28157657d9ccd63",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
-    "ID": 137
+    "ID": 80001
   },
   "NFT_NAME": "Heisenberg NFT",
   "SYMBOL": "METH",
