@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0x082ec271152CC7F957D10B15892A5B0EffFeeD59",
+  "SCAN_LINK": "https://polygonscan.com/token/0x082ec271152CC7F957D10B15892A5B0EffFeeD59",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "Matic",
@@ -8,11 +8,11 @@
   },
   "NFT_NAME": "Heisenberg NFT",
   "SYMBOL": "METH",
-  "MAX_SUPPLY": 3000,
-  "WEI_COST": 5000000000000000000,
-  "DISPLAY_COST": 5,
+  "MAX_SUPPLY": 2999,
+  "WEI_COST": 10000000000000000000,
+  "DISPLAY_COST": 10,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/heisenberg--nft",
   "SHOW_BACKGROUND": true
 }
